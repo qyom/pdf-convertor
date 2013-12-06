@@ -90,7 +90,7 @@
 class WkHtmlToPdf
 {
 //    protected $bin = '/usr/bin/wkhtmltopdf';
-    protected $bin = 'c:/xampp/htdocs/wkhtmltopdf/bin/wkhtmltopdf';
+    protected $bin = '/home/zizicoco/etc/wkhtmltopdf/convert';
 
     protected $enableEscaping = true;
     protected $version9 = false;

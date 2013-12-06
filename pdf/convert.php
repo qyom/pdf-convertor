@@ -18,7 +18,7 @@ if(isset($_POST['pdfData'])){
 
 $saveToFile = false;
 if(isset($_POST['saveToFile'])){
-    $saveToFile = $_POST['saveToFile'];
+    $saveToFile = true;
 };
 
 // Add a HTML file, a HTML string or a page from URL
@@ -43,6 +43,7 @@ $pdf->addPage('/home/zizicoco/www/utils/pdf/tmp/tmp.html');
 
 // Send to client for inline display
 if($saveToFile){
+
     if(!$pdf->send("linesheet.pdf")){
         throw new Exception('Could not save PDF: '.$pdf->getError());
     }

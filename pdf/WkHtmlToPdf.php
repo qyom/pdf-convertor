@@ -89,8 +89,7 @@
  */
 class WkHtmlToPdf
 {
-//    protected $bin = '/usr/bin/wkhtmltopdf';
-    protected $bin = '/home/zizicoco/etc/wkhtmltopdf/convert';
+    protected $bin = '/home/zizicoco/www/utils/pdf/converter';
 
     protected $enableEscaping = true;
     protected $version9 = false;

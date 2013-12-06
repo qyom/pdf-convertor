@@ -1,0 +1,268 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-size: 12px;
+    font-family: Tahoma,Verdana,Arial,sans-serif;
+    color: #888888;
+    margin: 0px;
+}
+
+div.page{
+    overflow: hidden;
+}
+
+div.page.no-header .linesheet-styles{
+
+    /*height: 438px;*/
+    /*width: 690px;*/
+    /*padding-top: 5px;*/
+    padding-top: 81px;
+}
+
+.page .linesheet-styles {
+
+    /*height: 100%;*/
+    /*height: 370px;*/
+    /*width: 690px;*/
+    margin: 0 auto;
+    padding: 15px;
+    overflow-y: hidden;
+}
+
+.page .item{
+    float: left;
+    background-color: #e3e3e3;
+    padding: 3px 7px 3px 7px;
+    margin: 3px;
+    color:#745a59;
+    font-size: 10px;
+    line-height: 15px;
+    /*width: 325px;*/
+    /*height: 173px;*/
+    page-break-inside:avoid;
+    position: relative;
+	/*width: 324px;*/
+	/*height: 172px;*/
+}
+
+.page .image {
+    text-align: center;
+    margin-right: 3px;
+    float: left;
+    position: relative;
+}
+
+.page .item img{
+	width: 100%;
+	/*height: 100%;*/
+}
+
+/*Images styles part*/
+.page .item .images{
+    text-align: center;
+    margin-bottom: 3px;
+    margin-right: 2%;
+    float: left;
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.page.no-style-description .item .images{
+    width: auto;
+    max-width: 70%;
+    height: auto;
+    max-height: 100%;
+}
+
+.page.lot-images .images{
+    max-width: 100%;
+    margin-right: 0;
+    /*margin: 0px auto;*/
+    /*float: none;*/
+}
+
+.page.lot-images.no-style-description .item .images{
+
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 75%;
+    margin-right: 0;
+}
+
+/*Style-Attributes styles*/
+.page .item .style-attributes{
+    float: left;
+    max-height: 65%;
+    width: 48%;
+    overflow: auto;
+}
+
+.page.no-style-description .item .style-attributes{
+    height: auto;
+    max-height: 100%;
+    width: 28%;
+}
+
+.page.lot-images .item .style-attributes{
+
+    float: left;
+    width: 100%;
+    height: auto;
+    max-height: 15%;
+}
+
+.page.lot-images.no-style-description .item .style-attributes{
+    float: left;
+    width: 100%;
+    height: auto;
+    max-height: 24%;
+    margin-top: 5px;
+}
+
+.list-items {
+
+    list-style-type: none;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+.page .list-items {
+    overflow: hidden;
+}
+
+.item .list-attributes {
+
+    list-style-type: none;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+li.list-item {
+
+    float: left;
+}
+
+.page .list-attributes li{
+    border-bottom: 1px solid #c1c1c1;
+}
+
+.page.no-style-description .list-attributes li{
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.page.lot-images .list-attributes li{
+
+    border-bottom-width: 0px;
+    border-right: 1px solid #c1c1c1;
+    float: left;
+    margin-right: 7px;
+    padding-right: 7px;
+}
+
+.page .list-attributes li.last{
+
+    border-width: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*style-description*/
+.style-description{
+    width: 100%;
+    height: 25%;
+    float: left;
+}
+
+.style-description textarea{
+    resize: none;
+    height: 100%;
+    width: 98%;
+    color: #888888;
+    /*font-size: 10px;*/
+    font-family: Tahoma,Verdana,Arial,sans-serif;
+}
+
+.page.no-style-description .style-description{
+    display: none;
+}
+
+div.header-top{
+    /* height: 70%; */
+    background-color: #f1f1f1;
+    margin-bottom: 3px;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+
+div.designer-info{
+    /* height: 25%; */
+    background-color: #f1f1f1;
+    display: inline-block;
+    width: 100%;
+}
+
+div.designer-info .part-one{
+    /*display: inline-block;*/
+    /*width: 55%;*/
+}
+div.designer-info .part-two{
+    /*display: inline-block;*/
+    /*width: 39%;*/
+}
+
+div.page .header{
+    width: 100%;
+}
+
+div.page.no-header .header{
+
+    display: none;
+}
+
+div.header-image{
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+div.header-image img{
+    height: 100%;
+}
+
+
+div.designer-info span{
+
+    border-right: solid 1px #9a9a9a;
+    padding-right: 3px;
+}
+
+div.designer-info span.last{
+
+    border-right-width: 0px;
+}
+
+/*div.header-image img {*/
+    /*height: 100%;*/
+    /* width: 100%; */
+    /*position: absolute;*/
+    /*right: 0;*/
+/*}*/
+
+.right{
+    float: right;
+}
+
+.left{
+    float: left;
+}

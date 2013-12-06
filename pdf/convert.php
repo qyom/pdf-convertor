@@ -16,6 +16,11 @@ if(isset($_POST['pdfData'])){
     $pdfData = $_POST['pdfData'];
 };
 
+$saveToFile = false;
+if(isset($_POST['saveToFile'])){
+    $saveToFile = $_POST['saveToFile'];
+};
+
 // Add a HTML file, a HTML string or a page from URL
 //  $pdf->addPage('http://google.com');
 
@@ -36,13 +41,15 @@ $pdf->addPage('/home/zizicoco/www/utils/pdf/tmp/tmp.html');
 // Save the PDF
 // $pdf->saveAs('tmp/tmp.pdf');
 
-//if(!$pdf->saveAs('linesheet/ls.pdf'))
-//    throw new Exception('Could not create PDF: '.$pdf->getError());
-
 // Send to client for inline display
-if(!$pdf->send()){
-    throw new Exception('Could not create PDF: '.$pdf->getError());
-}
+if($saveToFile){
+    if(!$pdf->send("linesheet.pdf")){
+        throw new Exception('Could not save PDF: '.$pdf->getError());
+    }
 
-// Send to client as file download
-// $pdf->send('ls.pdf');
+}
+else{
+    if(!$pdf->send()){
+        throw new Exception('Could not display PDF: '.$pdf->getError());
+    }
+}

@@ -36,19 +36,21 @@ $html =
     $pdfData.
     '</body></html>';
 
-file_put_contents("linesheet/ls.html", $html);
+//file_put_contents("linesheet/ls.html", $html);
 
-//$pdf->addPage($html);
+$pdf->addPage($html);
 //$pdf->addPage(file_get_contents("linesheet/ls.html"));
 // $pdf->addPage('ls.html');
-$pdf->addPage('http://localhost/wkhtmltopdf/linesheet/ls.html');
+
+//$pdf->addPage('http://localhost/wkhtmltopdf/linesheet/ls.html');
 
 //$pdf->saveAs('linesheet/ls.pdf');
 
-if(!$pdf->saveAs('linesheet/ls.pdf'))
-    throw new Exception('Could not create PDF: '.$pdf->getError());
+//if(!$pdf->saveAs('linesheet/ls.pdf'))
+//    throw new Exception('Could not create PDF: '.$pdf->getError());
+
 // ... or send to client for inline display
-//  $pdf->send();
+  $pdf->send();
 // ... or send to client as file download
 // $pdf->send('ls.pdf');
 

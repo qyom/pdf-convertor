@@ -4,7 +4,7 @@ html{
 }
 
 body {
-    font-size: 12px;
+    font-size: 14px;
     font-family: Tahoma,Verdana,Arial,sans-serif;
     color: #888888;
     margin: 0px;
@@ -35,17 +35,13 @@ div.page.no-header .linesheet-styles{
 .page .item{
     float: left;
     background-color: #e3e3e3;
-    padding: 3px 7px 3px 7px;
+    padding: 10px 15px;
     margin: 3px;
     color:#745a59;
-    font-size: 10px;
-    line-height: 15px;
-    /*width: 325px;*/
-    /*height: 173px;*/
+    font-size: 14px;
+    line-height: 17px;
     page-break-inside:avoid;
     position: relative;
-	/*width: 324px;*/
-	/*height: 172px;*/
 }
 
 .page .image {
@@ -180,15 +176,8 @@ li.list-item {
     width: 100%;
     height: 25%;
     float: left;
-}
-
-.style-description textarea{
-    resize: none;
-    height: 100%;
-    width: 98%;
-    color: #888888;
-    /*font-size: 10px;*/
-    font-family: Tahoma,Verdana,Arial,sans-serif;
+    background-color: #fff;
+    margin-top: 3px;
 }
 
 .page.no-style-description .style-description{

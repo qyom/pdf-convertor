@@ -16,7 +16,7 @@ $arrPageFormats =array(
 
 $pdfData = '';
 if(isset($_POST['pdfData'])){
-    $pdfData = $_POST['pdfData'];
+    $pdfData = str_replace('http://zizico.com', '/home/zizicoco/public_html', $_POST['pdfData']);
 };
 
 $saveToFile = false;
@@ -39,8 +39,8 @@ $pdf = new WkHtmlToPdf;
 $pdf->setPageOptions(array(
     'orientation' => $orientation,
 //    'page-size' => 'A4',
-    'page-height' => $pageFormat["height"],
-    'page-width' => $pageFormat["width"],
+     'page-height' => $pageFormat["height"],
+     'page-width' => $pageFormat["width"],
 ));
 
 // Add a HTML file, a HTML string or a page from URL
@@ -50,6 +50,9 @@ $html =
     '<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">'.
     '<head>'.
     '<title>linesheet layout</title>'.
+//    '<style tyle="text/css">'.
+//        '@page { size:8.5in 11in; margin: 2cm }'.
+//    '</style>'.
     '<link href="linesheet.css" media="all" rel="stylesheet" type="text/css" />'.
     '</head><body>'.
     $pdfData.

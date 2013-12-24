@@ -41,6 +41,8 @@ $pdf->setPageOptions(array(
 //    'page-size' => 'A4',
      'page-height' => $pageFormat["height"],
      'page-width' => $pageFormat["width"],
+//     'margin-top' => 0,
+     'margin-bottom' => 0,
 ));
 
 // Add a HTML file, a HTML string or a page from URL
